@@ -46,6 +46,7 @@ function enable() {
     Meta.KeyBindingFlags.NONE,
     Shell.KeyBindingMode.NORMAL | Shell.KeyBindingMode.MESSAGE_TRAY,
     focusLastUrgent);
+  updateIndicator();
 }
 
 function disable() {
