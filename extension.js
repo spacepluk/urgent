@@ -54,6 +54,7 @@ function disable() {
   display.disconnect(urgentId);
   display.disconnect(attentionId);
   Main.wm.removeKeybinding('focus-urgent');
+  updateIndicator();
 }
 
 // Handle mutter's window-marked-urgent signal
