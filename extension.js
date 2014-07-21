@@ -20,11 +20,11 @@ function init() {
   keybindings = (new Settings.Keybindings()).settings;
 
   indicator = new St.Bin({ style_class: 'panel-button',
-                        reactive: true,
-                        can_focus: true,
-                        x_fill: true,
-                        y_fill: false,
-                        track_hover: false });
+                           reactive: true,
+                           can_focus: true,
+                           x_fill: true,
+                           y_fill: false,
+                           track_hover: false });
   var icon = new St.Icon({ icon_name: 'dialog-warning-symbolic',
                            style_class: 'system-status-icon urgent-icon' });
   indicator.set_child(icon);
