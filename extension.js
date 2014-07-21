@@ -10,6 +10,7 @@ const Settings = Extension.imports.settings;
 var enabled = false;
 var keyBindingId, keybindings;
 var urgentId;
+var attentionId;
 var urgents = [];
 
 var indicator;
@@ -36,6 +37,7 @@ function enable() {
 
   // Listen for new urgent hints
   urgentId = display.connect('window-marked-urgent', handleUrgent);
+  attentionId = display.connect('window-demands-attention', handleUrgent);
 
   // Grab keys
   Main.wm.addKeybinding(
@@ -50,6 +52,7 @@ function disable() {
   enabled = false;
   var display = global.screen.get_display();
   display.disconnect(urgentId);
+  display.disconnect(attentionId);
   Main.wm.removeKeybinding('focus-urgent');
 }
 
