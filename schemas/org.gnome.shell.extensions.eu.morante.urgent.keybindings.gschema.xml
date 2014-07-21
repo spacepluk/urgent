@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.eu.morante.urgent.keybindings" path="/org/gnome/shell/extensions/eu/morante/urgent/keybindings/">
+    <key type="as" name="focus-urgent">
+      <default>["&lt;Mod4&gt;u"]</default>
+      <summary>Focus last urgent window</summary>
+      <description>Focus last urgent window.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,10 @@
+{
+  "shell-version": [
+    "3.12.2"
+  ],
+  "uuid": "urgent@morante.eu",
+  "name": "Urgent",
+  "description": "Show a small icon in the status bar when a window gets the urgent hint.",
+  "settings-schema": "org.gnome.shell.extensions.urgent.keybindings",
+  "url": "https://github.com/spacepluk/urgent"
+}
