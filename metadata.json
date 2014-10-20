@@ -1,6 +1,7 @@
 {
   "shell-version": [
-    "3.12.2"
+    "3.12.2",
+    "3.14"
   ],
   "uuid": "urgent@morante.eu",
   "name": "Urgent",
