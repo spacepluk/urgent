@@ -40,11 +40,12 @@ function enable() {
   attentionId = display.connect('window-demands-attention', handleUrgent);
 
   // Grab keys
+  var KeyBindingMode = Shell.ActionMode ? "ActionMode" : "KeyBindingMode";
   Main.wm.addKeybinding(
     'focus-urgent',
     keybindings,
     Meta.KeyBindingFlags.NONE,
-    Shell.KeyBindingMode.NORMAL | Shell.KeyBindingMode.MESSAGE_TRAY,
+    Shell[KeyBindingMode].NORMAL | Shell[KeyBindingMode].MESSAGE_TRAY,
     focusLastUrgent);
   updateIndicator();
 }
