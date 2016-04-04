@@ -2,7 +2,9 @@
   "shell-version": [
     "3.12.2",
     "3.14",
-    "3.16"
+    "3.16",
+    "3.18",
+    "3.20"
   ],
   "uuid": "urgent@morante.eu",
   "name": "Urgent",
